@@ -1,12 +1,7 @@
 {
   "name": "mangahouse-coop",
   "version": "1.0.0",
-  "private": true,
-  "description": "mangahouse-coop",
-  "author": "makuru93",
-  "keywords": [
-    "gatsby"
-  ],
+  "license": "",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
@@ -15,8 +10,18 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^4.13.1",
+    "gatsby": "^2.19.38",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "prettier": "^2.6.2"
   }
 }
