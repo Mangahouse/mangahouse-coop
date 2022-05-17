@@ -110,7 +110,7 @@ function Main() {
                     好きな作家のマンガを所有することで、そのマンガのファン同士がプラットフォーム上で交流することができるようになります。
                   </Text>
                 </VStack>
-                <Box flex={1} mt={{base: 10, sm: 'inherit'}} mt={{base: 0, sm: 'inherit'}}>
+                <Box flex={1} mt={{base: 10, sm: 'inherit'}} marginTop={{base: 0, sm: 'inherit'}}>
                   <StaticImage src='../images/communityDriven.png'/>
                 </Box>
               </Flex>
