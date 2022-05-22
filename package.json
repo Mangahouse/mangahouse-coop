@@ -1,7 +1,7 @@
 {
   "name": "mangahouse-coop",
   "version": "1.0.0",
-  "license": "",
+  "license": "UNLICENSED",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
