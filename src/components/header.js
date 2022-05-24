@@ -2,6 +2,7 @@ import React from 'react'
 import { Box, Button, chakra, Flex, HStack, Spacer, Link, Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react'
 import { TriangleDownIcon } from '@chakra-ui/icons'
 import { StaticImage } from 'gatsby-plugin-image'
+import I18nButton from './i18nButton'
 
 const goToTop = () => {
   window.scrollTo({
@@ -46,7 +47,7 @@ function Header() {
             </Menu>
           </HStack>
         </chakra.nav>
-        <Box ml='50'>
+        <Box ml={{base: 1, md: '50'}}>
           <Button>dApp Coming Soon</Button>
         </Box>
       </Flex>
@@ -78,6 +79,9 @@ function Header() {
           </Menu>
         </HStack>
       </chakra.nav>
+      <Box mt={4}>
+        <I18nButton />
+      </Box>
     </chakra.header>
   )
 }

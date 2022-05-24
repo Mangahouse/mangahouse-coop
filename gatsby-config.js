@@ -23,6 +23,18 @@ module.exports = {
         path: `${__dirname}/src/images`,
         name: 'uploads',
       },
+      options: {
+        path: `${__dirname}/src/locales`,
+        name: `locale`
+      },
+    },
+    {
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        localeJsonSourceName: `locale`,
+        languages: [`ja`, `en`],
+        defaultLanguage: `en`,
+      }
     },
   ]
 } 

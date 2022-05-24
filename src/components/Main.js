@@ -2,6 +2,7 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Container, Box, Flex, VStack, Heading, Text, chakra, HStack, Button } from "@chakra-ui/react"
 import "@fontsource/nunito-sans"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 function Card({ title, desc, ...rest }) {
   return (
@@ -15,6 +16,7 @@ function Card({ title, desc, ...rest }) {
 //32-5vw 24-4vw 16-2.5vw
 //sm: 480px md: 768px lg: 992px
 function Main() {
+  const {t} = useTranslation()
   return (
     <>
       <Container maxW='90%' p={0} py={{base: '3vw', lg: 5}}>
@@ -65,7 +67,7 @@ function Main() {
         <chakra.section mt={120}> 
           <Box>
             <Heading fontSize={{base: '4vw', md: '2xl'}} textAlign='center' pb={{base: '20vw', md: 130}}>
-              MANGAHOUSE VALUE
+              MANGA HOUSE VALUE
             </Heading>
             <Box fontFamily='nunito-sans'>
               <Flex display={{base: 'block', sm: 'flex'}}>
@@ -102,7 +104,7 @@ function Main() {
                   </Box>
               </Flex>
               <Flex mt={{base: 'none', sm: 20}} display={{base: 'block', sm: 'flex'}}>
-                <VStack flex={1} spacing={17} w='100%'>
+                <VStack flex={1} spacing={17} w='100%' pt={{base: 0, sm: 10, md: '10vw'}}>
                   <chakra.h2 fontSize={{base: '4vw', sm:'3vw', md: '2xl'}} fontWeight='900' textAlign='inherit' w='100%'>
                     コミュニティ主導
                   </chakra.h2>
@@ -110,7 +112,7 @@ function Main() {
                     好きな作家のマンガを所有することで、そのマンガのファン同士がプラットフォーム上で交流することができるようになります。
                   </Text>
                 </VStack>
-                <Box flex={1} mt={{base: 10, sm: 'inherit'}} marginTop={{base: 0, sm: 'inherit'}}>
+                <Box flex={1}>
                   <StaticImage src='../images/communityDriven.png'/>
                 </Box>
               </Flex>
@@ -120,10 +122,10 @@ function Main() {
         <chakra.section mt={150}>
           <Box>
             <Heading fontSize={24} fontWeight='800' textAlign='center' mb={66}>ROAD MAP</Heading>
-            <Box textAlign='center' ml='auto' mr='auto' maxW={892} display={{base: 'block', lg: 'flex'}}>
+            <Box textAlign='center' ml='auto' mr='auto' minW={{base: 'none', lg: 892}} display={{base: 'block', lg: 'flex'}}>
               <VStack flex={1} spacing={{base: 4, lg: 54}} mb={{base: '54px'}}>
                 <Text fontWeight={800}>フェーズ 1</Text>
-                <Flex w={250} h={250} borderRadius='50%' border='solid 1px' direction='column' justify='center'>
+                <Flex w={290} h={290} borderRadius='50%' border='solid 1px' direction='column' justify='center'>
                   <Text>
                     アナウンスメント<br />
                     ウェブサイト開設<br />
@@ -136,9 +138,9 @@ function Main() {
               </VStack>
               <VStack flex={1} spacing={{base: 4, lg: 54}} mb={{base: '54px'}}>
                 <Text fontWeight={800}>フェーズ 2</Text>
-                <Flex w={250} h={250} borderRadius='50%' border='solid 1px' direction='column' justify='center' pos='relative'
-                  _before={{ display: {base: 'none', lg: 'block'}, w: '49px', h: '1px', content: `""`, pos: 'absolute', left: '100%', bg: 'white'}}
-                  _after={{display: {base: 'none', lg: 'block'}, w: '49px', h: '1px', content: `""`, pos: 'absolute', right: '100%', bg: 'white'}}
+                <Flex w={290} h={290} borderRadius='50%' border='solid 1px' direction='column' justify='center' pos='relative'
+                  //_before={{ display: {base: 'none', lg: 'block'}, w: '49px', h: '1px', content: `""`, pos: 'absolute', left: '100%', bg: 'white'}}
+                  //_after={{display: {base: 'none', lg: 'block'}, w: '49px', h: '1px', content: `""`, pos: 'absolute', right: '100%', bg: 'white'}}
                   >
                   <Text>
                     dAppローンチ<br />
@@ -154,7 +156,7 @@ function Main() {
               </VStack>
               <VStack flex={1} spacing={{base: 4, lg: 54}}>
                 <Text fontWeight={800}>フェーズ 3</Text>
-                <Flex w={250} h={250} borderRadius='50%' border='solid 1px' direction='column' justify='center'>
+                <Flex w={290} h={290} borderRadius='50%' border='solid 1px' direction='column' justify='center'>
                   <Text pt='2ch'>
                     出版社とのパートナーシップ<br />
                     デジタル本棚ローンチ<br />
