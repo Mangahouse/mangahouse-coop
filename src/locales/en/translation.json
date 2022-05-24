@@ -1,1 +1,60 @@
-{"titleTxt": "Hello"}
+{
+  "top": {
+    "heading1": "",
+    "heading2": "",
+    "heading3": "",
+    "desc1": "",
+    "desc2": "",
+    "desc3": "",
+    "desc4": "",
+    "btn1": "",
+    "btn2": ""
+  },
+  "sect2": {
+    "title1": "",
+    "desc1": "",
+    "title2": "",
+    "desc2": ""
+  },
+  "sect3": {
+    "heading1": "",
+    "desc1-1": "",
+    "desc1-2": "",
+    "desc1-3": "",
+    "heading2": "",
+    "desc2-1": "",
+    "desc2-2": "",
+    "desc2-3": "",
+    "heading3": "",
+    "desc3": ""
+  },
+  "sect4": {
+    "phase1-1": "",
+    "phase1-2": "",
+    "phase1-3": "",
+    "phase1-4": "",
+    "phase1-5": "",
+    "phase1-6": "",
+    "phase2-1": "",
+    "phase2-2": "",
+    "phase2-3": "",
+    "phase2-4": "",
+    "phase2-5": "",
+    "phase2-6": "",
+    "phase2-7": "",
+    "phase2-8": "",
+    "phase3-1": "",
+    "phase3-2": "",
+    "phase3-3": "",
+    "phase3-4": "",
+    "phase3-5": "",
+    "phase3-6": "",
+    "phase3-7": ""
+  },
+  "btnSect": {
+    "heading": "",
+    "btnL": "",
+    "btnR": ""
+  },
+  "LM": ""
+}

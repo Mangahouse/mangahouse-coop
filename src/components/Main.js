@@ -9,7 +9,7 @@ function Card({ title, desc, ...rest }) {
     <Flex h='20vw' bg='white' borderRadius={10} mb={{base: 8, sm: 0}}
       flexDirection='column' justify='center' textAlign='center' {...rest}>
       <Heading fontSize={{base: '4vw', sm: '3vw', md: '2xl'}} color='MH'>{title}</Heading>
-      <Text mt={{md: '2vw', lg: 6}} color='#424242' fontWeight={600} whiteSpace={{lg: 'pre'}} fontSize={{base: '2.5vw', sm: '2vw', md: 'inherit'}}>{desc}</Text>
+      <Text mt={{md: '2vw', lg: 6}} color='#424242' fontWeight={600} whiteSpace={{lg: 'pre-wrap'}} fontSize={{base: '2.5vw', sm: '2vw', md: 'inherit'}}>{desc}</Text>
     </Flex>
   )
 }
@@ -25,22 +25,22 @@ function Main() {
             <VStack w={{base: '100%', md: '55%'}} justify='center'>
               <Box w='100%' textAlign='left'>
                 <Heading fontSize={{base: '5vw', md: 32}}>
-                  <Text>お気に入りのマンガを<br />
-                    NFTで<chakra.span color='MH'>出版&コレクション</chakra.span>
+                  <Text>{t('top.heading1')}<br />
+                    {t('top.heading2')}<chakra.span color='MH'> {t('top.heading3')}</chakra.span>
                   </Text>
                 </Heading>
                 <Box fontStyle='italic' fontSize={{base: '2.5vw', md: 16}}>
-                  <Text>マンガハウスは、ブロックチェーン技術をマンガの世界に導入し、<br />
-                    私たちが「<chakra.span as='i'>Manga 3.0</chakra.span>」と呼ぶ革命的で完全に透明なシステムを構築します。
+                  <Text>{t('top.desc1')}<br />
+                  {t('top.desc2')}<chakra.span as='i'>{t('top.desc3')}</chakra.span>{t('top.desc4')}
                   </Text>
                 </Box>
               </Box>
               <Box pt={{base: '3.5vw', sm: 16}} w='100%'>
                 <HStack>
-                  <Button flex={2} fontSize={{base: '2.5vw', sm: 15, lg: 'inherit'}}>2022年秋 マンガマーケット 公開</Button>
+                  <Button flex={2} fontSize={{base: '2.5vw', sm: 15, lg: 'inherit'}}>{t('top.btn1')}</Button>
                   <Button flex={1} variant='outline' borderRadius={20} fontSize={{base: '2.5vw', sm: 15, lg: 'inherit'}}
                     _hover={{bg: 'whiteAlpha.200'}} _active={{bg: 'none', transform: 'scale(0.92)'}}>
-                    詳細はこちら
+                    {t('top.btn2')}
                   </Button>
                 </HStack>
               </Box>
@@ -54,12 +54,12 @@ function Main() {
           <Box>
             <HStack spacing={{base: 0, sm: 6}} display={{base: 'block', sm: 'flex'}}>
               <Card flex={1}
-                title='マンガNFTマーケットプレイス'
-                desc={`すべての取引において、完全に透明な収益分配を\nアーティストとパブリッシャーに永久的に分配されます。`}
+                title={t('sect2.title1')}
+                desc={t('sect2.desc1')}
               />
               <Card flex={1}
-                title='マンガNFT'
-                desc={`従来の紙マンガと同様に二次販売が可能なため、\nMangaNFTの付加価値が高まります。`}
+                title={t('sect2.title2')}
+                desc={t('sect2.desc2')}
               />
             </HStack>
           </Box>
@@ -73,12 +73,12 @@ function Main() {
               <Flex display={{base: 'block', sm: 'flex'}}>
                 <VStack flex={1} spacing={17} w='100%'>
                   <chakra.h2 fontSize={{base: '4vw', sm:'3vw', md: '2xl'}} fontWeight='900' textAlign='inherit' w='100%'>
-                    ワンストップなマンガ体験
+                    {t('sect3.heading1')}
                   </chakra.h2>
                   <Text wordBreak={{base: 'inherit',lg: 'keep-all'}} fontSize={{base: '2.5vw', md: 'inherit'}}>
-                    作家はマンガを出版することができ、購入ごとに即座に収益を得ることができます。<br />
-                    さらに、ファンはマンガNFTを購入し、読み、収集し、再販することができます。<br />
-                    作家は再販時に追加で収益を受け取ることができ、ファンはお気に入りの作家をさらにサポートすることができます。
+                    {t('sect3.desc1-1')}<br />
+                    {t('sect3.desc1-2')}<br />
+                    {t('sect3.desc1-3')}
                   </Text>
                 </VStack>
                 <Box flex={1} ml={{base: 0, sm: 42}} mt={{base: 10, sm: 'inherit'}}>
@@ -91,12 +91,11 @@ function Main() {
                 </Box>
                 <VStack flex={1} spacing={17} w='100%' justify='center'>
                   <chakra.h2 fontSize={{base: '4vw', sm:'3vw', md: '2xl'}} fontWeight='900' textAlign='inherit' w='100%'>
-                    今までにない出版機会
+                  {t('sect3.heading2')}
                   </chakra.h2>
                   <Text fontSize={{base: '2.5vw', md: 'inherit'}}>
-                    マンガハウスは、マンガを出版するためのハードルをなくします。
-                    シンプルなプロセスで、誰でもマンガを出版し、その作品を管理することができます。
-                    <Text pt='2ch'>出版にご興味のある方からの<chakra.span color='MH'>ご連絡お待ちしております。</chakra.span></Text>
+                    {t('sect3.desc2-1')}
+                    <Text pt='2ch'>{t('sect3.desc2-2')}<chakra.span color='MH'>{t('sect3.desc2-3')}</chakra.span></Text>
                   </Text>
                 </VStack>
                   <Box display={{base: 'inherit', sm: 'none'}} mt={{base: -65, sm: 0}}>
@@ -106,10 +105,10 @@ function Main() {
               <Flex mt={{base: 'none', sm: 20}} display={{base: 'block', sm: 'flex'}}>
                 <VStack flex={1} spacing={17} w='100%' pt={{base: 0, sm: 10, md: '10vw'}}>
                   <chakra.h2 fontSize={{base: '4vw', sm:'3vw', md: '2xl'}} fontWeight='900' textAlign='inherit' w='100%'>
-                    コミュニティ主導
+                  {t('sect3.heading3')}
                   </chakra.h2>
                   <Text fontSize={{base: '2.5vw', md: 'inherit'}}>
-                    好きな作家のマンガを所有することで、そのマンガのファン同士がプラットフォーム上で交流することができるようになります。
+                  {t('sect3.desc3')}
                   </Text>
                 </VStack>
                 <Box flex={1}>
@@ -127,12 +126,12 @@ function Main() {
                 <Text fontWeight={800}>フェーズ 1</Text>
                 <Flex w={290} h={290} borderRadius='50%' border='solid 1px' direction='column' justify='center'>
                   <Text>
-                    アナウンスメント<br />
-                    ウェブサイト開設<br />
-                    SNSローンチ<br />
-                    基礎マーケティング<br />
-                    マンガ家スカウト<br />
-                    コンテンツ制作
+                    {t('sect4.phase1-1')}<br />
+                    {t('sect4.phase1-2')}<br />
+                    {t('sect4.phase1-3')}<br />
+                    {t('sect4.phase1-4')}<br />
+                    {t('sect4.phase1-5')}<br />
+                    {t('sect4.phase1-6')}
                   </Text>
                 </Flex>
               </VStack>
@@ -143,14 +142,14 @@ function Main() {
                   //_after={{display: {base: 'none', lg: 'block'}, w: '49px', h: '1px', content: `""`, pos: 'absolute', right: '100%', bg: 'white'}}
                   >
                   <Text>
-                    dAppローンチ<br />
-                    マーケットプレイスローンチ<br />
-                    マンガNFTローンチ<br />
-                    ウェブリーダーローンチ<br />
-                    マンガ家デビュー<br />
-                    マーケティング展開<br />
-                    クラウドファンディング<br />
-                    パートナーシップ<br />
+                    {t('sect4.phase2-1')}<br />
+                    {t('sect4.phase2-2')}<br />
+                    {t('sect4.phase2-3')}<br />
+                    {t('sect4.phase2-4')}<br />
+                    {t('sect4.phase2-5')}<br />
+                    {t('sect4.phase2-6')}<br />
+                    {t('sect4.phase2-7')}<br />
+                    {t('sect4.phase2-8')}<br />
                   </Text>
                 </Flex>
               </VStack>
@@ -158,13 +157,13 @@ function Main() {
                 <Text fontWeight={800}>フェーズ 3</Text>
                 <Flex w={290} h={290} borderRadius='50%' border='solid 1px' direction='column' justify='center'>
                   <Text pt='2ch'>
-                    出版社とのパートナーシップ<br />
-                    デジタル本棚ローンチ<br />
-                    コミュニティ機能ローンチ<br />
-                    NFTマンガマガジン創刊<br />
-                    メタバース<br />
-                    コミコン参加<br />
-                    (DAOローンチ)
+                    {t('sect4.phase3-1')}<br />
+                    {t('sect4.phase3-2')}<br />
+                    {t('sect4.phase3-3')}<br />
+                    {t('sect4.phase3-4')}<br />
+                    {t('sect4.phase3-5')}<br />
+                    {t('sect4.phase3-6')}<br />
+                    {t('sect4.phase3-7')}
                   </Text>
                 </Flex>
               </VStack>
@@ -174,15 +173,15 @@ function Main() {
       </Container>
       <Flex bg='white' mt={170} h={370} justify='center' maxH={{base: 200, sm: '40vw', md: 'inherit'}}>
         <VStack justify='center' width='100%'>
-          <Heading fontSize={{base: '4vw', md: '2xl'}} color='#424242' mb={{base: '8vw', md: 16}}>マンガハウスのエコシステムに参加</Heading>
+          <Heading fontSize={{base: '4vw', md: '2xl'}} color='#424242' mb={{base: '8vw', md: 16}}>{t('btnSect.heading')}</Heading>
           <HStack w='60%' spacing={{base: 10, md: 20}}>
             <Button flex={1} h={20} fontSize={{base: '2.5vw', sm: 15, lg: 24}} borderRadius={40} 
               px={{base: '2vw', md: 4}} maxH={{base: 50, sm: '8vw', lg: 'inherit'}}>
-              もっと知る
+              {t('btnSect.btnL')}
             </Button>
             <Button flex={1} h={20} fontSize={{base: '2.5vw', sm: 15, lg: 24}} borderRadius={40} 
               px={{base: '2vw', md: 4}} maxH={{base: 50, sm: '8vw', lg: 'inherit'}}>
-              連絡はこちら
+              {t('btnSect.btnR')}
             </Button>
           </HStack>
         </VStack>

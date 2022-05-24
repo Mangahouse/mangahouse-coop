@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, chakra, Flex, HStack, VStack, Link, Text } from '@chakra-ui/react'
 import { StaticImage } from "gatsby-plugin-image"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const goToTop = () => {
   window.scrollTo({
@@ -10,6 +11,7 @@ const goToTop = () => {
 }
 
 function Footer() {
+  const {t} = useTranslation()
   return (
     <chakra.footer h={450}> 
       <Flex justify='center' h='inherit'>
@@ -19,7 +21,7 @@ function Footer() {
           </Box>
           <HStack fontWeight='800' spacing={{base: 'none', sm: 50}} display={{base: 'block', sm: 'flex'}}>
             <VStack>
-              <Link href='' isExternal>もっと知る</Link>
+              <Link href='' isExternal>{t("LM")}</Link>
               <Link href='' isExternal>News</Link>
               <Link href='' isExternal>Github</Link>
               <Link href='' isExternal>FAQ</Link>
