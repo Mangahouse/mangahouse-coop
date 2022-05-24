@@ -1,5 +1,5 @@
 import React from 'react'
-import Head from './head'
+import Head from './Head'
 import Header from './header'
 import Footer from './footer'
 import { ChakraProvider } from '@chakra-ui/react'
