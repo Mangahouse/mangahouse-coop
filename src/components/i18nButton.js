@@ -9,7 +9,7 @@ function I18next() {
   return (
     <Flex w={90} h='40px' borderRadius='20px' 
       justify='center' align='center' pos={'fixed'} right={3} bg='rgba(53,55,61,0.9)'>
-      <List display='flex' justifyContent='space-evenly' fontSize={18} fontWeight='700' w='100%'>
+      <List display='flex' justifyContent='space-evenly' fontSize={17} fontWeight='700' w='100%'>
         {languages.map((lng) => (
           <ListItem key={lng} _after={{border: '1px'}}>
             <Link to={originalPath} language={lng}>

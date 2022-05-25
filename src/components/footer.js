@@ -19,7 +19,7 @@ function Footer() {
           <Box  as='button' alignSelf='center' w={{base: '52vw', sm: 'inherit'}} onClick={goToTop}>
             <StaticImage src='../images/MH_full.png' width='251'></StaticImage>
           </Box>
-          <HStack fontWeight='800' spacing={{base: 'none', sm: 50}} display={{base: 'block', sm: 'flex'}}>
+          <HStack fontWeight='800' spacing={{base: 'none', sm: 50}} display={{base: 'block', sm: 'flex'}} textAlign='center'>
             <VStack>
               <Link href='' isExternal>{t("LM")}</Link>
               <Link href='' isExternal>News</Link>

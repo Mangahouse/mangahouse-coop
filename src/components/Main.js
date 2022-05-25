@@ -20,7 +20,7 @@ function Main() {
   return (
     <>
       <Container maxW='90%' p={0} py={{base: '3vw', lg: 5}}>
-        <chakra.section mt={30}>
+        <chakra.section mt={70}>
           <Flex w='100%' justify={{base: 'inherit', md: 'center'}}>
             <VStack w={{base: '100%', md: '55%'}} justify='center'>
               <Box w='100%' textAlign='left'>
@@ -35,7 +35,7 @@ function Main() {
                   </Text>
                 </Box>
               </Box>
-              <Box pt={{base: '3.5vw', sm: 16}} w='100%'>
+              <Box pt={{base: '7vw', sm: 16}} w={'100%'} minW={{base: 'inherit', md: '430px', lg: 'inherit'}}>
                 <HStack>
                   <Button flex={2} fontSize={{base: '2.5vw', sm: 15, lg: 'inherit'}}>{t('top.btn1')}</Button>
                   <Button flex={1} variant='outline' borderRadius={20} fontSize={{base: '2.5vw', sm: 15, lg: 'inherit'}}
@@ -81,7 +81,7 @@ function Main() {
                     {t('sect3.desc1-3')}
                   </Text>
                 </VStack>
-                <Box flex={1} ml={{base: 0, sm: 42}} mt={{base: 10, sm: 'inherit'}}>
+                <Box flex={1} ml={{base: 0, sm: 42}}>
                   <StaticImage src='../images/mangaExperience.png'/>
                 </Box>
               </Flex>
@@ -123,7 +123,7 @@ function Main() {
             <Heading fontSize={24} fontWeight='800' textAlign='center' mb={66}>ROAD MAP</Heading>
             <Box textAlign='center' ml='auto' mr='auto' minW={{base: 'none', lg: 892}} display={{base: 'block', lg: 'flex'}}>
               <VStack flex={1} spacing={{base: 4, lg: 54}} mb={{base: '54px'}}>
-                <Text fontWeight={800}>フェーズ 1</Text>
+                <Text fontWeight={800}>{t('sect4.phase1')}</Text>
                 <Flex w={290} h={290} borderRadius='50%' border='solid 1px' direction='column' justify='center'>
                   <Text>
                     {t('sect4.phase1-1')}<br />
@@ -136,7 +136,7 @@ function Main() {
                 </Flex>
               </VStack>
               <VStack flex={1} spacing={{base: 4, lg: 54}} mb={{base: '54px'}}>
-                <Text fontWeight={800}>フェーズ 2</Text>
+                <Text fontWeight={800}>{t('sect4.phase2')}</Text>
                 <Flex w={290} h={290} borderRadius='50%' border='solid 1px' direction='column' justify='center' pos='relative'
                   //_before={{ display: {base: 'none', lg: 'block'}, w: '49px', h: '1px', content: `""`, pos: 'absolute', left: '100%', bg: 'white'}}
                   //_after={{display: {base: 'none', lg: 'block'}, w: '49px', h: '1px', content: `""`, pos: 'absolute', right: '100%', bg: 'white'}}
@@ -154,7 +154,7 @@ function Main() {
                 </Flex>
               </VStack>
               <VStack flex={1} spacing={{base: 4, lg: 54}}>
-                <Text fontWeight={800}>フェーズ 3</Text>
+                <Text fontWeight={800}>{t('sect4.phase3')}</Text>
                 <Flex w={290} h={290} borderRadius='50%' border='solid 1px' direction='column' justify='center'>
                   <Text pt='2ch'>
                     {t('sect4.phase3-1')}<br />
