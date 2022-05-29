@@ -19,7 +19,7 @@ function Footer() {
           <Box  as='button' alignSelf='center' w={{base: '52vw', sm: 'inherit'}} onClick={goToTop}>
             <StaticImage src='../images/MH_full.png' width='251'></StaticImage>
           </Box>
-          <HStack fontWeight='800' spacing={{base: 'none', sm: 50}} display={{base: 'block', sm: 'flex'}} textAlign='center'>
+          <HStack spacing={{base: 'none', sm: 50}} display={{base: 'block', sm: 'flex'}} textAlign='center'>
             <VStack>
               <Link href='' isExternal>{t("LM")}</Link>
               <Link href='' isExternal>News</Link>
@@ -36,7 +36,7 @@ function Footer() {
         </HStack>
       </Flex>
       <Box mt={{base: '-35vw', sm: '-108px'}} ml='47px'>
-        <Text textAlign='initial'>©Manga House<br />All rights reserved.</Text>
+        <Text textAlign='initial' fontWeight={400}>©Manga House<br />All rights reserved.</Text>
       </Box>
     </chakra.footer> 
   )

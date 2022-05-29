@@ -7,6 +7,7 @@ const theme = {
       body: {
         backgroundColor: '#35373D',
         color: 'white',
+        fontWeight: 700
       }
     }
   },

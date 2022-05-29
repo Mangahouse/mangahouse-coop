@@ -121,10 +121,10 @@ function Main() {
         <chakra.section mt={150}>
           <Box>
             <Heading fontSize={24} fontWeight='800' textAlign='center' mb={66}>ROAD MAP</Heading>
-            <Box textAlign='center' ml='auto' mr='auto' minW={{base: 'none', lg: 892}} display={{base: 'block', lg: 'flex'}}>
+            <Box textAlign='center' ml='auto' mr='auto' display={{base: 'block', lg: 'flex'}}>
               <VStack flex={1} spacing={{base: 4, lg: 54}} mb={{base: '54px'}}>
                 <Text fontWeight={800}>{t('sect4.phase1')}</Text>
-                <Flex w={290} h={290} borderRadius='50%' border='solid 1px' direction='column' justify='center'>
+                <Flex w={290} h={290} borderRadius='50%' border='solid 3px' direction='column' justify='center' bg='#35373D'>
                   <Text>
                     {t('sect4.phase1-1')}<br />
                     {t('sect4.phase1-2')}<br />
@@ -137,9 +137,9 @@ function Main() {
               </VStack>
               <VStack flex={1} spacing={{base: 4, lg: 54}} mb={{base: '54px'}}>
                 <Text fontWeight={800}>{t('sect4.phase2')}</Text>
-                <Flex w={290} h={290} borderRadius='50%' border='solid 1px' direction='column' justify='center' pos='relative'
-                  //_before={{ display: {base: 'none', lg: 'block'}, w: '49px', h: '1px', content: `""`, pos: 'absolute', left: '100%', bg: 'white'}}
-                  //_after={{display: {base: 'none', lg: 'block'}, w: '49px', h: '1px', content: `""`, pos: 'absolute', right: '100%', bg: 'white'}}
+                <Flex w={290} h={290} borderRadius='50%' border='solid 3px' direction='column' justify='center' pos='relative'
+                  _before={{ display: {base: 'none', lg: 'block'}, w: '30vw', h: '3px', content: `""`, pos: 'absolute', left: '100%', bg: 'white', zIndex: -1 }}
+                  _after={{display: {base: 'none', lg: 'block'}, w: '30vw', h: '3px', content: `""`, pos: 'absolute', right: '100%', bg: 'white', zIndex: -1 }}
                   >
                   <Text>
                     {t('sect4.phase2-1')}<br />
@@ -155,7 +155,7 @@ function Main() {
               </VStack>
               <VStack flex={1} spacing={{base: 4, lg: 54}}>
                 <Text fontWeight={800}>{t('sect4.phase3')}</Text>
-                <Flex w={290} h={290} borderRadius='50%' border='solid 1px' direction='column' justify='center'>
+                <Flex w={290} h={290} borderRadius='50%' border='solid 3px' direction='column' justify='center' bg='#35373D'>
                   <Text pt='2ch'>
                     {t('sect4.phase3-1')}<br />
                     {t('sect4.phase3-2')}<br />
