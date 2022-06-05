@@ -75,13 +75,13 @@ function Main() {
                   <chakra.h2 fontSize={{base: '4vw', sm:'3vw', md: '2xl'}} fontWeight='900' textAlign='inherit' w='100%'>
                     {t('sect3.heading1')}
                   </chakra.h2>
-                  <Text wordBreak={{base: 'inherit',lg: 'keep-all'}} fontSize={{base: '2.5vw', md: 'inherit'}}>
+                  <Text wordBreak={{base: 'inherit',lg: 'keep-all'}} fontSize={{base: '2vw', md: 'inherit'}}>
                     {t('sect3.desc1-1')}<br />
                     {t('sect3.desc1-2')}<br />
                     {t('sect3.desc1-3')}
                   </Text>
                 </VStack>
-                <Box flex={1} ml={{base: 0, sm: 42}}>
+                <Box flex={1} ml={{base: 0, sm: '1vw'}}>
                   <StaticImage src='../images/mangaExperience.png'/>
                 </Box>
               </Flex>
@@ -89,11 +89,11 @@ function Main() {
                 <Box flex={1} display={{base: 'none', sm: 'inherit'}}>
                   <StaticImage src='../images/newPublishing .png'/>
                 </Box>
-                <VStack flex={1} spacing={17} w='100%' justify='center'>
+                <VStack flex={1} spacing={17} w='100%' pt={{base: 0, sm: '10vw'}}>
                   <chakra.h2 fontSize={{base: '4vw', sm:'3vw', md: '2xl'}} fontWeight='900' textAlign='inherit' w='100%'>
                   {t('sect3.heading2')}
                   </chakra.h2>
-                  <Text fontSize={{base: '2.5vw', md: 'inherit'}}>
+                  <Text fontSize={{base: '2vw', md: 'inherit'}}>
                     {t('sect3.desc2-1')}
                     <Text pt='2ch'>{t('sect3.desc2-2')}<chakra.span color='MH'>{t('sect3.desc2-3')}</chakra.span></Text>
                   </Text>
@@ -103,11 +103,11 @@ function Main() {
                   </Box>
               </Flex>
               <Flex mt={{base: 'none', sm: 20}} display={{base: 'block', sm: 'flex'}}>
-                <VStack flex={1} spacing={17} w='100%' pt={{base: 0, sm: 10, md: '10vw'}}>
+                <VStack flex={1} spacing={17} w='100%' pt={{base: 0, sm: '4vw'}}>
                   <chakra.h2 fontSize={{base: '4vw', sm:'3vw', md: '2xl'}} fontWeight='900' textAlign='inherit' w='100%'>
                   {t('sect3.heading3')}
                   </chakra.h2>
-                  <Text fontSize={{base: '2.5vw', md: 'inherit'}}>
+                  <Text fontSize={{base: '2vw', md: 'inherit'}}>
                   {t('sect3.desc3')}
                   </Text>
                 </VStack>
